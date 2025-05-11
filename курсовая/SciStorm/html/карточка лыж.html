@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkiStorm - SnowBlade Pro X7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/карточка лыж.css" />
+  </head>
+
+  <body>
+    <header>
+      <div><img src="../IMG/Загаловок.svg" class="footer-logo" /></div>
+      <nav>
+        <a href="../SkiStorm.html">Главная</a>
+        <a href="">Каталог</a>
+        <a href="">О нас</a>
+        <a href="">Галерея</a>
+        <a href="">Контакты</a>
+        <a href="../html/отзыв.html">Отзывы</a>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="produktimage">
+        <img
+          src="/изображения/лыжи/лыжи1.png"
+          alt="Горные лыжи  SnowBlade Pro X7"
+        />
+      </div>
+      <div class="produkt-info">
+        <h1>Горные лыжи SnowBlade Pro X7</h1>
+        <p>
+          Лыжи для профессионалов, созданные для максимальной скорости и
+          контроля
+        </p>
+        <div class="price">92 000.00 руб.</div>
+        <a href="#" class="add-to-cart">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png"
+            alt="cart icon"
+          />
+          В корзину
+        </a>
+      </div>
+    </div>
+    <section class="description">
+      <h2>Описание</h2>
+      <p>
+        Лыжи SnowBlade Pro X7 разработаны для опытных горнолыжников, которые
+        ценят динамику и точность. Уникальная технология DualCore сочетает
+        деревянный сердечник с карбоновыми вставками для повышенной жёсткости и
+        отзывчивости. Геометрия лыж обеспечивает стабильность на высоких
+        скоростях и идеальную управляемость на крутых склонах. Подходят для
+        подготовленных трасс и агрессивного катания.
+      </p>
+    </section>
+
+    <div id="cartModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <div id="cartView">
+          <div class="cart-header">🛒 Корзина</div>
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th>Фото</th>
+                <th>Название</th>
+                <th>Количество</th>
+                <th>Цена</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="/изображения/лыжи/лыжи1.png"
+                    alt="SnowBlade Pro X7"
+                    width="60"
+                  />
+                </td>
+                <td>Горные лыжи SnowBlade Pro X7</td>
+                <td><input type="number" value="1" min="1" /></td>
+                <td>92 000 руб.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="cart-total">Итого: 92 000 руб.</div>
+          <button class="btn" onclick="showCheckout()">
+            Перейти к оформлению
+          </button>
+        </div>
+
+        <div id="checkoutForm" class="checkout-form">
+          <div class="cart-header">🛒 Корзина</div>
+          <div class="cart-total">Итого: 92 000 руб.</div>
+
+          <input type="tel" placeholder="Ваш контактный телефон" required />
+          <input type="email" placeholder="Введите E-mail" required />
+          <input type="text" placeholder="Адрес доставки" required />
+          <textarea placeholder="Комментарий"></textarea>
+
+          <button class="btn" onclick="showAlert()">Оформить заказ</button>
+          <button class="btn secondary" onclick="backToCart()">
+            Вернуться к списку
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../html/JS/корзина.js"></script>
+
+    <footer>
+      <div><img src="../IMG/Загаловок.svg" class="footer-logo" /></div>
+      <div class="footer-info">
+        ООО "SkiStorm", 123456, г.Минск, пр-т. Победителей 107,
+      </div>
+      <div class="footer-phone">
+        <img class="truba" src="/SciStorm/svg/image 4.svg" /> 1(152)956-50-88
+      </div>
+      <div class="social-icons">
+        <img src="../svg/image 5.svg" alt="Telegram" />
+        <img src="../svg/image 5.svg" alt="VK" />
+        <img src="../svg/image 7.svg" alt="Instagram" />
+      </div>
+    </footer>
+  </body>
+</html>

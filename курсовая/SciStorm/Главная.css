@@ -1,0 +1,553 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+/*Стили для текста*/
+/*.card-text{
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  
+}*/
+.text-h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.text-h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.text-h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.text-p {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  line-height: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*:root{
+    --accent - color: 
+    -- dark - color:
+  }*/
+/*.inter-<uniquifier> {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }*/
+
+
+
+header {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: #0044cc;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 25px;
+  font-weight: 500;
+}
+.hero {
+  height: 100vh;
+  background: url(../SciStorm/IMG/sowbordist.jpg) no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.hero .cta-button {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero .cta-button:hover {
+  background-color: white;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+}
+
+.h1 {
+  position: absolute;
+  top: 496px;
+  left: 515px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-style: italic;
+  color: white;
+  font-weight: 700;
+  max-height: 213px;
+  max-width: 891px;
+}
+
+button {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 511px;
+  height: 100px;
+  top: 874px;
+  left: 750px;
+  font-size: 40px;
+  font-style: italic;
+  background: transparent;
+  font-weight: 800;
+  color: white;
+  border: 3px solid;
+  border-radius: 40px;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  button {
+    width: 511px; /* Restore original size for larger screens */
+    font-size: 40px; /* Increase font size */
+  }
+}
+button:hover {
+  background-color: rgba(255, 255, 255, 0.582);
+  transition: transform 0.6s ease;
+  transform: scale(1.1);
+}
+
+.section {
+  padding: 120px;
+  max-width: 1920px;
+  margin: 40px auto;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 275px;
+  justify-content: center;
+}
+
+.product-card {
+  border-radius: 16px;
+  padding: 16px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.6s ease;
+}
+ 
+.product-card:hover {
+  transform: scale(1.1);
+  transition: transform 0.6s ease;
+  box-shadow:  8px 10px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 40px;
+}
+
+.product-title {
+  margin: 12px 0 4px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product-subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.product-prise {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.product-button {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 2px solid #006fff;
+  border-radius: 20px;
+  color: #006fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.6s ease;
+}
+
+.product-button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.about-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url(../изображения/Фон/фон2.png) no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.about-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  text-align: left;
+}
+
+.about-content h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 0 10px;
+  }
+
+  .about-content h2 {
+    font-size: 18px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+  }
+}
+
+
+.features-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature {
+  max-width: 250px;
+}
+
+.feature img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.image {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.reviews {
+  flex: 2 1 600px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.review-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-card h4 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.review-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews {
+    width: 100%;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  gap: 40px;
+}
+
+.image-block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.form-block {
+  max-width: 400px;
+}
+
+.form-block h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 60px;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-style: italic;
+}
+
+.submit-btn:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+  transition: transform 0.6s ease;
+}
+@media (max-width: 768px) {
+  .container1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-block {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+footer {
+  background-color: #110c28;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-logo {
+  font-weight: bold;
+  font-size: 18px;
+  color: #1a73e8;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.footer-info {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-phone {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.social-icons img {
+  width: 60px;
+  margin: 0 10px;
+  vertical-align: middle;
+}

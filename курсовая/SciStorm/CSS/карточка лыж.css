@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+nav a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #555555;
+    font-size: 20px;
+}
+
+nav:hover {
+    transform: scale(1.1);
+    transition: transform 0.6s ease;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 40px;
+}
+
+.product-image img {
+    width: 260px;
+    border-radius: 10px;
+}
+
+.product-info {
+    max-width: 500px;
+}
+
+.product-info h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.product-info p {
+    margin: 10px 0;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.add-to-cart {
+    display: inline-flex;
+    align-items: center;
+    background-color: #2d7ef7;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.add-to-cart:hover{
+    transform: scale(1.1);
+    transition: transform 0.6s ease;
+
+}
+.add-to-cart img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.description {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.description h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.description p {
+    color: #666;
+    font-size: 14px;
+}
+footer {
+    background-color: #110c28;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  footer .logo {
+    font-size: 20px;
+    color: #2d7ef7;
+    font-weight: bold;
+    margin-bottom: 10px;  
+}
+
+  footer p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  footer .socials {
+    margin-top: 20px;
+  }
+
+  footer .socials img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    vertical-align: middle;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .product-info {
+      text-align: center;
+    }
+
+    .add-to-cart {
+      justify-content: center;
+    }
+  }
+
+
+
+   /* Стили для модального окна */
+   .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    font-family: 'Inter', sans-serif;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .cart-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+
+  .cart-total {
+    text-align: right;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .btn {
+    background-color: #1e4b93;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+
+  .btn.secondary {
+    background-color: #bbb;
+  }
+
+  .checkout-form {
+    display: none;
+  }
+
+  .checkout-form input,
+  .checkout-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }

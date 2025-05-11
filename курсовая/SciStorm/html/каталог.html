@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/каталог.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <script src="/SciStorm/html/JS/каталог.js"></script>
+    <header>
+        <div><img src="../IMG/Загаловок.svg" class="logo" /></div>
+        <nav>
+            <a href="../SkiStorm.html">Главная</a>
+            <a href="../html/каталог.html">Каталог</a>
+            <a href="#">О нас</a>
+            <a href="#">Галерея</a>
+            <a href="#">Контакты</a>
+            <a href="../html/отзыв.html">Отзывы</a>
+        </nav>
+    </header>
+
+    <div class="all">
+        <h2>Каталог товаров</h2>
+        <button onclick="sortByPrice('asc')">
+            Сортировать по возрастанию цены
+        </button>
+        <button onclick="sortByPrice('desc')">
+            Сортировать по убыванию цены
+        </button>
+
+        <button onclick="sortByName()">Сортировать по названию</button>
+        <div class="catalog">
+            <div class="item">
+                <div class="product-image">
+                    <img src="/изображения/лыжи/лыжи1.png" alt="SnowBlade Pro X7" />
+                </div>
+                <h3>Горные лыжи<br />SnowBlade Pro X7</h3>
+                <p>92 000 ₽</p>
+                <button><a href="../html/карточка лыж.html">Перейти</a></button>
+            </div>
+
+            <div class="item">
+                <img src="/изображения/ОДЕЖДА И ОБУВЬ/Горнолыжные ботинки.png" alt="SnowGrip Pro" />
+                <h3>Горнолыжные ботинки<br />SnowGrip Pro</h3>
+                <p>12 500 ₽</p>
+                <button>Перейти</button>
+            </div>
+
+            <div class="item">
+                <img src="/изображения/Защита/Маска.png" alt="SnowVision Pro" />
+                <h3>Горнолыжная маска<br />"SnowVision Pro"</h3>
+                <p>4 200 ₽</p>
+                <button>Перейти</button>
+            </div>
+
+            <div class="item">
+                <img src="/изображения/ОДЕЖДА И ОБУВЬ/Горнолыжная куртка.png" alt="AlpineShield X" />
+                <h3>Горнолыжная куртка<br />AlpineShield X</h3>
+                <p>15 000 ₽</p>
+                <button>Перейти</button>
+            </div>
+
+            <div class="item">
+                <img src="/изображения/ОДЕЖДА И ОБУВЬ/Горн ботинки.png" alt="SnowGrip Pro" />
+                <h3>Горнолыжные ботинки<br />SnowGrip Pro</h3>
+                <p>10 500 ₽</p>
+                <button>Перейти</button>
+            </div>
+
+            <div class="item">
+                <img src="/изображения/лыжи/палки.png" alt="AlpineGrip Carbon Adjust" />
+                <h3>Горнолыжные палки <br />AlpineGrip Carbon Adjust</h3>
+                <p>11 800 ₽</p>
+                <button>Перейти</button>
+            </div>
+
+            <div class="item">
+                <img src="/изображения/Защита/Шлем.png" alt="AlpineShield X" />
+                <h3>Горнолыжная куртка<br />AlpineShield X</h3>
+                <p>15 000 ₽</p>
+                <button>Перейти</button>
+            </div>
+
+            <div class="item">
+                <img src="/изображения/лыжи/лыжи2.png" alt="FrostLine Explorer 95" />
+                <h3>Горные лыжи<br />FrostLine Explorer 95</h3>
+                <p>68 500 ₽</p>
+                <button>Перейти</button>
+            </div>
+
+            <div class="item">
+                <img src="/изображения/лыжи/лыжи4.png" alt="SnowBlade Pro X7" />
+                <h3>Горные лыжи <br />SnowBlade Pro X7X</h3>
+                <p>92 000 ₽</p>
+                <button>Перейти</button>
+            </div>
+            <div class="item">
+                <img src="/изображения/ОДЕЖДА И ОБУВЬ/Комбез.png" alt="SnowBlade Pro X7" />
+                <h3>Горнолыжный комбинезон<br />PeakPerformance Z</h3>
+                <p>18 000 ₽</p>
+                <button>Перейти</button>
+            </div>
+            <div class="item">
+                <img src="/изображения/Защита/Защита спины.png" alt="SpineArmor" />
+                <h3>Горнолыжная защита для спины <br />SpineArmor</h3>
+                <p>12 500 ₽</p>
+                <button>Перейти</button>
+            </div>
+            <div class="item">
+                <img src="/изображения/Защита/Защита для коленей.png" alt="KneePro" />
+                <h3>
+                    Горнолыжная защита для коленей<br />
+                    KneePro
+                </h3>
+                <p>5 800 ₽</p>
+                <button>Перейти</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">SkiStorm</div>
+            <p>ООО "SkiStorm", 123456, г.Минск, пр-т. Победителей 107</p>
+            <p>
+                <img class="truba" src="/SciStorm/svg/image 4.svg" /> 1(152)956-50-88
+            </p>
+            <div class="footer-icons">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" title="Telegram" />
+                <img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="VK" title="VK" />
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" title="Instagram" />
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
